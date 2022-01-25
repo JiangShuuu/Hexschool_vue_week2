@@ -1,10 +1,6 @@
 const url = "https://vue3-course-api.hexschool.io/";
 
-// example@test.com
-// example
-
-var app = new Vue({
-  el: "#app",
+const app = {
   data() {
     return {
       email: "",
@@ -30,4 +26,6 @@ var app = new Vue({
         });
     },
   },
-});
+};
+
+Vue.createApp(app).mount("#app");

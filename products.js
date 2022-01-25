@@ -1,8 +1,7 @@
 // const url = "https://vue3-course-api.hexschool.io/";
 // const path = "JohnText";
 
-var app = new Vue({
-  el: "#app",
+const app = {
   name: "products",
   data() {
     return {
@@ -57,4 +56,6 @@ var app = new Vue({
         });
     },
   },
-});
+};
+
+Vue.createApp(app).mount("#app");
